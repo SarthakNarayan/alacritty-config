@@ -1,0 +1,88 @@
+# https://github.com/rajasegar/alacritty-themes
+colors:
+  # Default colors
+  primary:
+    background: "#101a27"
+    foreground: "#c5c3ce"
+
+  # Normal colors
+  normal:
+    black: "#313a33"
+    red: "#c71952"
+    green: "#55a967"
+    yellow: "#e0cf77"
+    blue: "#5164df"
+    magenta: "#b300df"
+    cyan: "#00a8af"
+    white: "#ccccdd"
+
+  # Bright colors
+  bright:
+    black: "#424b44"
+    red: "#d82a63"
+    green: "#66bf78"
+    yellow: "#f1d088"
+    blue: "#6275f0"
+    magenta: "#c411f0"
+    cyan: "#11b9c0"
+    white: "#ddddee"
+
+# Font configuration (changes require restart)
+font:
+  # Normal (roman) font face
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: MesloLGS NF
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+
+  # Point size
+  size: 16.0
+  # Better font rendering for mac
+  use_thin_strokes: true
+
+selection:
+  save_to_clipboard: false
+
+window:
+  padding:
+    x: 2
+    y: 2
+  # Remove buttons
+  # decorations: none
+  # Open in full screen
+  startup_mode: SimpleFullscreen
+
+scrolling:
+  # Specifying '0' will disable scrolling.
+  history: 100000
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+window.dynamic_title: true
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+# Startup directory, unset or None for home directory
+working_directory: None
+key_bindings:
+  # use command + backspace for deleting
+  - { key: Back, mods: Super, chars: "\x15" }
