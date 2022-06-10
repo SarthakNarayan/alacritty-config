@@ -1,0 +1,2 @@
+- https://github.dev/tmcdonell/config-alacritty
+  - Contains tmux config also
