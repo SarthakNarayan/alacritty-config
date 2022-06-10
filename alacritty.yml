@@ -1,31 +1,37 @@
 # https://github.com/rajasegar/alacritty-themes
 colors:
+  name: TokyoNight Storm
+  author: Folke
   # Default colors
   primary:
-    background: "#101a27"
-    foreground: "#c5c3ce"
+    background: "0x24283b"
+    foreground: "0xc0caf5"
 
   # Normal colors
   normal:
-    black: "#313a33"
-    red: "#c71952"
-    green: "#55a967"
-    yellow: "#e0cf77"
-    blue: "#5164df"
-    magenta: "#b300df"
-    cyan: "#00a8af"
-    white: "#ccccdd"
+    black: "0x1D202F"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xa9b1d6"
 
   # Bright colors
   bright:
-    black: "#424b44"
-    red: "#d82a63"
-    green: "#66bf78"
-    yellow: "#f1d088"
-    blue: "#6275f0"
-    magenta: "#c411f0"
-    cyan: "#11b9c0"
-    white: "#ddddee"
+    black: "0x414868"
+    red: "0xf7768e"
+    green: "0x9ece6a"
+    yellow: "0xe0af68"
+    blue: "0x7aa2f7"
+    magenta: "0xbb9af7"
+    cyan: "0x7dcfff"
+    white: "0xc0caf5"
+
+  indexed_colors:
+    - { index: 16, color: "0xff9e64" }
+    - { index: 17, color: "0xdb4b4b" }
 
 # Font configuration (changes require restart)
 font:
@@ -64,7 +70,7 @@ window:
   # Remove buttons
   # decorations: none
   # Open in full screen
-  startup_mode: SimpleFullscreen
+  # startup_mode: SimpleFullscreen
 
 scrolling:
   # Specifying '0' will disable scrolling.
@@ -86,3 +92,4 @@ working_directory: None
 key_bindings:
   # use command + backspace for deleting
   - { key: Back, mods: Super, chars: "\x15" }
+theme: Tokyonight_Storm
