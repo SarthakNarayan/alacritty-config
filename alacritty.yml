@@ -1,3 +1,6 @@
+# Cheatsheet
+# https://sunnnychan.github.io/cheatsheet/linux/config/alacritty.yml.html
+
 # https://github.com/rajasegar/alacritty-themes
 colors:
   name: TokyoNight Storm
@@ -92,4 +95,12 @@ working_directory: None
 key_bindings:
   # use command + backspace for deleting
   - { key: Back, mods: Super, chars: "\x15" }
+  - { key: Space, mods: Control, chars: "\x00" } # https://github.com/alacritty/alacritty/issues/99
+  - { key: Right, mods: Alt, chars: "\x1BF" } # jumping words using arrow keys
+  - { key: Left, mods: Alt, chars: "\x1BB" } # jumping words using arrow keys
 theme: Tokyonight_Storm
+# if you want the bell sound in mac
+# bell:
+#   command:
+#     program: osascript
+#     args: ["-e", "beep"]
